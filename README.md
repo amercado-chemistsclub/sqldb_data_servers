@@ -4,7 +4,6 @@ This is the API call from Pandas for a ticker such as AMD
 
 import pandas_datareader as pdr
 AMD = pdr.get_data_yahoo('AMD', start='2020-01-31')
-# The end date is the current date
 
 
 The extracted data can be saved to a CSV file depending on the size of the dataset for future use. 
