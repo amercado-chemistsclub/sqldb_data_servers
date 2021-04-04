@@ -3,6 +3,8 @@ This is the API call from Pandas for a ticker such as AMD
 
 
 import pandas_datareader as pdr
+
+
 AMD = pdr.get_data_yahoo('AMD', start='2020-01-31')
 
 
