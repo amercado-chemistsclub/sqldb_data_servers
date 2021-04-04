@@ -1,9 +1,10 @@
 The ETL scripts are for inserting data into SQL Databases that include Postgresql and Google Cloud Spanner. The stock ticker data was obtained from an API such as Yahoo Finance using the Python Pandas Library. 
 This is the API call from Pandas for a ticker such as AMD
 
-# End date is the current date
+
 import pandas_datareader as pdr
 AMD = pdr.get_data_yahoo('AMD', start='2020-01-31')
+# The end date is the current date
 
 AMD.info()
 <class 'pandas.core.frame.DataFrame'>
