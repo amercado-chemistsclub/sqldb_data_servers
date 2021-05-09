@@ -18,11 +18,11 @@ instance = spanner_client.instance(instance_id)
 database_id = 'historical_etf'
 database = instance.database(database_id)
 
-#Instad of row by row insertion batch load it as a list
+#Instead of row by row insertion run the batch load as a list
 columns = df.columns
 values = df.values.tolist()
 
-#Insert the data into the table specifed with the batch metnod
+#Insert the data into the table specifed with the batch method
 with database.batch() as batch:
     batch.insert(
         table='Stock_past',
